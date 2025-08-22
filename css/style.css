@@ -1,0 +1,379 @@
+header {
+  background: #000;
+  color: #fff;
+}
+
+body {
+  background-color: #ffffff; /* fondo oscuro como el offcanvas */
+  color: #fff;
+}
+
+.offcanvas {
+  background-color: #000 !important;
+}
+
+.navbar-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  margin: 0 10px;
+}
+
+
+.red-bar {
+  background: #d32f2f;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 6px;
+  padding: 8px 8px;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.titulo-seccion {
+  letter-spacing: 7px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.info-card {
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.info-card h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 20PX;
+}
+
+.info-box {
+  background-color: #d32f2f;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: left;
+  gap: 35px;
+  margin-bottom: 40px;
+  justify-content: start;
+}
+
+/* Imágenes a la izquierda */
+.icono-info {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Igualar altura de cajas rojas */
+.same-height {
+  min-height: 76px; /* puedes ajustar si lo quieres más alto */
+  display: flex;
+  align-items: center;
+}
+
+#acerca {
+  color:#000;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+
+#acerca-de-nosotros p {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+#ubicacion {
+  color: #000;
+  letter-spacing: 7px;
+}
+
+#ubicacion iframe {
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #3b3b3b;
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+#contactofoot{
+  letter-spacing: 7px;
+}
+
+.footer-contacto {
+  text-align: left;
+  min-width: 220px;
+  max-width: 300px;
+}
+
+.footer-contacto h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.info-item img {
+  width: 50px;
+  margin-right: 0.7rem;
+}
+
+.info-item span {
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-button i {
+  font-size: 30px;
+}
+
+#whatsapp-icon {
+  width: 90px;
+  height: 90px;
+}
+
+.footer-247 img {
+  max-width: 150px;
+}
+
+.footer-copy {
+  background-color: white;
+  color: #3b3b3b;
+  font-size: 0.7rem;
+  padding: 0.8rem 1rem;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-box {
+    font-size: 12px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .icono-info {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  #ubicacion iframe {
+    border-radius: 12px;
+  }
+}
+
+
+.phone-bar {
+  background: #d32f2f;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 2px 0;
+  width:271px; 
+  height: 20px;
+  border-radius: 4px;
+  font-size: 11px;
+  letter-spacing: 7px;
+}
+
+.logo-circle {
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  display: inline-block;
+  border: 3px solid #d32f2f;
+}
+
+.services-list {
+  color: #fff;
+  text-align: left;
+  font-size: 0.95rem;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.navbar-jrgruass {
+  background: #000;
+  width: 100%;
+  min-height: 120px;
+}
+
+#carouselJR {
+  height: 100%;
+  overflow: hidden;
+}
+
+#carouselJR .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.titulo-conocenos {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 7px;
+  color: #000; /* puedes cambiar a rojo si deseas: #c80000 */
+
+}
+
+/* Oculta el navbar horizontal en móvil, muestra en desktop */
+@media (max-width: 1028px) {
+  .navbar-jrgruass {
+    display: none !important;
+  }
+  .navbar-block {
+    min-width: unset;
+    margin-bottom: 20px;
+  }
+  .container.d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .solo-escritorio {
+    display: none !important;
+  }
+  .solo-movil {
+    display: flex !important;
+  }
+}
+@media (min-width: 1029px) {
+  .solo-escritorio {
+    display: flex !important;
+  }
+  .solo-movil {
+    display: none !important;
+  }
+}
+
+/* Ajusta el menú lateral (offcanvas) */
+.offcanvas-body {
+  padding-top: 0;
+}
+.red-bar, .phone-bar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hamburguesa roja en móvil */
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='8' width='40' height='4' rx='2' fill='red'/%3E%3Crect y='18' width='40' height='4' rx='2' fill='red'/%3E%3Crect y='28' width='40' height='4' rx='2' fill='red'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
+}
+.navbar-toggler {
+  width: 48px;
+  height: 48px;
+}
+
+/* Las imágenes dentro de los cuadros rojos se adaptan */
+.red-bar img, .red-bar i {
+  max-height: 36px;
+  width: auto;
+  height: auto;
+}
+
+/* Tarjetas responsivas */
+.card {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Texto de las tarjetas responsivo */
+.card-body {
+  padding: 1.2rem 0.5rem;
+}
+
+/* Títulos de tarjetas adaptables */
+.card-title {
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 576px) {
+  .red-bar {
+    font-size: 0.92rem;
+    padding: 8px 4px;
+    max-width: 98vw;
+  }
+  .card-title {
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+  }
+  .card-body {
+    padding: 1rem 0.2rem;
+  }
+  .red-bar img, .red-bar i {
+    max-height: 28px;
+  }
+}

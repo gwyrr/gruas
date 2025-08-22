@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRUAS JR - Servicio de Grúas 24/7 en Colombia</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="GRUAS JR ofrece servicio de gruas 24/7 en Colombia. Asistencia vial, traslado de vehículos y atención rápida en todo el país.">
+  <meta name="author" content="GRUAS JR">
+  <link rel="icon" href="images/logo-gruas.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="GRUAS JR - Servicio 24/7 en Colombia">
+  <meta property="og:description" content="Servicio profesional de grúas en todo Colombia. Atención inmediata 24 horas.">
+  <meta property="og:image" content="images/logo-gruas.png">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar-jrgruass solo-escritorio py-3" role="banner" aria-label="Barra de navegación escritorio">
+    <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+      <!-- Bloque izquierdo: logo 24/7 + imagen -->
+      <div class="d-flex align-items-center mb-3 mb-lg-0">
+        <img src="images/247.png" alt="Servicio 24 horas 7 días" width="100" height="100" class="me-3" loading="lazy">
+        <div class="d-none d-lg-flex flex-column align-items-center">
+          <div class="red-bar">SERVICIO AL CLIENTE</div>
+          <img src="images/grua remolcando.png" alt="Grúa remolcando auto" width="200" height="120" loading="lazy">
+          <div class="phone-bar">+57 3234390677</div>
+        </div>
+      </div>
+      <!-- Bloque central: logo circular y ubicación -->
+      <div class="d-flex flex-column align-items-center text-center mb-3 mb-lg-0 flex-grow-1">
+        <span class="logo-circle mb-2">
+          <img src="images/logo-gruas.png" alt="Logo JR Gruas" width="90" loading="lazy">
+        </span>
+        <div class="text-uppercase" style="letter-spacing:1px; font-size:13px;">
+          LA ROMELIA, BRR<br>GALAXIA
+        </div>
+      </div>
+      <!-- Botón hamburguesa solo en móvil -->
+      <button class="navbar-toggler d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Bloque derecho en escritorio -->
+      <div class="d-none d-lg-flex flex-row align-items-start text-start gap-4">
+        <!-- Columna SERVICIOS -->
+        <div class="d-flex flex-column">
+          <div class="red-bar mb-2 text-center" style="width:239px;">SERVICIOS</div>
+          <ul class="services-list mb-2" style="padding-left:18px;">
+            <li>DOSQUEBRADAS</li>
+            <li>PEREIRA</li>
+            <li>SANTA ROSA DE CABAL</li>
+          </ul>
+        </div>
+        <!-- Columna CONÓCENOS -->
+        <div class="d-flex flex-column">
+          <div class="red-bar mb-2 text-center" style="width:239px;">CONOCENOS</div>
+          <div style="font-size:13px; color:#fff; text-align:left; max-width:180px;">
+            SOMOS GRUAS JR, EXPERTOS EN ASISTENCIA VIAL RAPIDA Y CONFIABLE 24/7.
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar móvil -->
+  <nav class="navbar-mobile solo-movil d-flex d-lg-none align-items-center justify-content-between px-3 py-2" style="background:#000;" aria-label="Barra de navegación móvil">
+    <div class="d-flex align-items-center">
+      <span class="logo-circle me-2">
+        <img src="images/logo-gruas.png" alt="Logo JR Gruas" width="50" loading="lazy">
+      </span>
+      <span class="text-uppercase text-white" style="letter-spacing:1px; font-size:11px;">
+        LA ROMELIA, BRR GALAXIA
+      </span>
+    </div>
+    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" aria-label="Menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <!-- Menú lateral (offcanvas) para móvil -->
+  <aside class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column align-items-center">
+      <img src="images/247.png" alt="Servicio 24/7" width="60" class="mb-3" loading="lazy">
+      <div class="red-bar mb-2" style="width:185px;">SERVICIO AL CLIENTE</div>
+      <img src="images/grua remolcando.png" alt="Grúa remolcando" width="120" class="mb-2" loading="lazy">
+      <div class="phone-bar mb-3" style="width:185px;">+57 3234390677</div>
+      <div class="red-bar mb-2" style="width:185px;">SERVICIOS</div>
+      <ul class="services-list mb-3 text-start">
+        <li>DOSQUEBRADAS</li>
+        <li>PEREIRA</li>
+        <li>SANTA ROSA DE CABAL</li>
+      </ul>
+      <div class="red-bar mb-2" style="width:185px;">CONOCENOS</div>
+      <div style="font-size:0.85rem; color:#fff; text-align:left; max-width:180px;">
+        SOMOS GRUAS JR, EXPERTOS EN ASISTENCIA VIAL RAPIDA Y CONFIABLE 24/7.
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero principal, Carrusel -->
+  <section aria-label="Galería de servicios de grúa">
+    <div id="carouselJR" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/GRUAS 1.jpg" class="d-block w-100 img-fluid" alt="Servicio de grúas en carretera" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="images/GRUAS 2.jpg" class="d-block w-100 img-fluid" alt="Traslado de vehículos" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="images/GRUAS 3.jpg" class="d-block w-100 img-fluid" alt="Servicio rápido de grúas" loading="lazy">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselJR" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselJR" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Sección Conócenos -->
+  <section class="container py-5" aria-labelledby="conocenos">
+    <h1 class="titulo-seccion text-center mb-5" id="conocenos">CONOCENOS</h1>
+    <div class="row g-4 text-center">
+      <!-- Tarjeta 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card h-100 d-flex flex-column justify-content-between">
+          <h2 class="h5">SERVICIOS 24/7 Y TIPOS DE CARGA</h2>
+          <div class="info-box same-height">CARGA LIVIANA: MOTOS, CARROS FAMILIARES Y CAMIONETAS PEQUEÑAS.</div>
+          <div class="info-box same-height">CARGA PESADA: CAMIONES, MAQUINARIA, TRACTOMULAS Y VOLQUETAS.</div>
+          <div class="info-box same-height">OTROS SERVICIOS: ASISTENCIA VIAL, TRASLADOS ESPECIALES Y TRANSPORTE SEGÚN TUS NECESIDADES.</div>
+        </div>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card h-100 d-flex flex-column justify-content-between">
+          <h2 class="h5">FACILIDAD CON MEDIOS DE PAGO</h2>
+          <div class="info-box same-height">
+            <img src="images/logo dinero.png" alt="Pago en efectivo" class="icono-info" loading="lazy">
+            <span>EFECTIVO</span>
+          </div>
+          <div class="info-box same-height">
+            <img src="images/logo bancolombia.png" alt="Pago por Bancolombia" class="icono-info" loading="lazy">
+            <span>BANCOLOMBIA</span>
+          </div>
+          <div class="info-box same-height">
+            <img src="images/logo nequi.png" alt="Pago por Nequi" class="icono-info" loading="lazy">
+            <span>NEQUI</span>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="col-lg-4 col-md-12">
+        <div class="info-card h-100 d-flex flex-column justify-content-between">
+          <h2 class="h5">SERVICIOS DENTRO Y FUERA DE LA CIUDAD</h2>
+          <div class="info-box same-height">
+            <img src="images/UBICACION.png" alt="Transporte a otros municipios" class="icono-info" loading="lazy">
+            <span>TRANSPORTE A OTROS MUNICIPIOS</span>
+          </div>
+          <div class="info-box same-height">
+            <img src="images/MAPA.png" alt="Cobertura regional y nacional" class="icono-info" loading="lazy">
+            <span>COBERTURA A NIVEL REGIONAL Y NACIONAL</span>
+          </div>
+          <div class="info-box same-height">
+            <img src="images/ESCUDO.png" alt="Seguridad y compromiso" class="icono-info" loading="lazy">
+            <span>SEGURIDAD Y COMPROMISO EN CADA KILÓMETRO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acerca de nosotros -->
+  <section class="container py-5" id="acerca-de-nosotros" aria-labelledby="acerca">
+    <h2 class="text-center mb-5" id="acerca">ACERCA DE NOSOTROS</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>
+          En <strong>GRUAS JR</strong> somos una empresa dedicada al servicio de grúas especializadas para el transporte y rescate de vehículos, motos, maquinaria y más.<br><br>
+          ✅ Contamos con una amplia experiencia en el sector, además de personal capacitado, brindando atención ágil, segura y profesional, disponibles las 24 horas y los 7 días de la semana.<br><br>
+          ✅ Nuestra prioridad es la seguridad de tu vehículo y tu tranquilidad, por eso trabajamos con responsabilidad, puntualidad y precios justos.<br><br>
+          📍 Ofrecemos cobertura en Pereira, Dosquebradas, Santa Rosa y alrededores, además de servicios especiales a nivel nacional.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="images/grua lado.jpg" alt="Camiones de GRUAS JR en servicio" class="img-fluid rounded shadow" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Ubicación -->
+  <section class="container py-5" id="ubicacion" aria-labelledby="encuentranos">
+    <h2 class="text-center fw-bold mb-4" id="encuentranos">ENCUENTRANOS</h2>
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5693154989146!2d-75.68246232589213!3d4.831934440059252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38878e152defd7%3A0xe82c319038f2c9fd!2sLa%20Romelia%2C%20Dosquebradas%2C%20Risaralda!5e0!3m2!1ses!2sco!4v1722012898445!5m2!1ses!2sco"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación GRUAS JR en Dosquebradas">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/573234390677" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Contáctanos por WhatsApp">
+    <img src="images/contacto.png" alt="Contáctanos por WhatsApp" id="whatsapp-icon" loading="lazy">
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer mt-5" role="contentinfo">
+    <div class="footer-container container">
+      <div class="footer-logo mb-3 mb-md-0">
+        <img src="images/logo-gruas.png" alt="GRUAS JR Logo" loading="lazy">
+      </div>
+      <div class="footer-contacto mb-3 mb-md-0">
+        <h2 id="contactofoot">CONTACTANOS</h2>
+        <div class="info-item">
+          <img src="images/simbolo llamada.png" alt="Teléfono">
+          <span>+57 3234390677</span>
+        </div>
+        <div class="info-item">
+          <img src="images/UBICACION.png" alt="Ubicación">
+          <span>DOSQUEBRADAS</span>
+        </div>
+        <div class="info-item">
+          <img src="images/correo-electronico.png" alt="Correo">
+          <span>info@gruasjr.com</span>
+        </div>
+      </div>
+      <div class="footer-247">
+        <img src="images/247.png" alt="Atención 24/7" loading="lazy">
+      </div>
+    </div>
+    <div class="footer-copy">
+      GRUAS JR – COPYRIGHT 2025 – SERVICIOS DE GRÚA EN PEREIRA, DOSQUEBRADAS Y TODO EL EJE CAFETERO – 
+      DISEÑO Y CREACIÓN WEB <strong>ALASKA</strong>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
