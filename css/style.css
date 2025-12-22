@@ -2,6 +2,23 @@ header {
   background: #000;
   color: #fff;
 }
+.header-location {
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header-box-width {
+    width: 239px !important; /* Mantiene el ancho exacto que tenías */
+}
+
+.header-text-info {
+    font-size: 13px;
+    color: #fff;
+    text-align: left;
+    max-width: 180px;
+}
 
 body {
   background-color: #ffffff; /* fondo oscuro como el offcanvas */
@@ -10,6 +27,32 @@ body {
 
 .offcanvas {
   background-color: #000 !important;
+}
+
+/* Estilos para mantener el ancho y fuente en el Menú Lateral */
+.offcanvas-box-width {
+  width: 185px !important;
+}
+
+.small-phone-text {
+  font-size: 10px !important;
+}
+
+.offcanvas-about-text {
+  font-size: 0.85rem;
+  color: #fff;
+  text-align: left;
+  max-width: 180px;
+}
+
+.navbar-mobile {
+  background: #000; /* Movido del HTML al CSS */
+  width: 100%;
+}
+
+.mobile-location {
+  letter-spacing: 1px;
+  font-size: 11px;
 }
 
 .navbar-block {
@@ -276,11 +319,8 @@ body {
 }
 
 .services-list {
-  color: #fff;
-  text-align: left;
-  font-size: 0.95rem;
-  margin: 0;
-  padding-left: 20px;
+    list-style: none !important;
+    padding-left: 18px;
 }
 
 .navbar-jrgruass {
