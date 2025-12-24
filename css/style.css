@@ -25,6 +25,14 @@ body {
   color: #fff;
 }
 
+#servicios.h5{
+  padding-bottom: 23px;
+}
+
+#respaldo{
+  font-size: 11px;
+}
+
 .offcanvas {
   background-color: #000 !important;
 }
@@ -131,7 +139,7 @@ body {
   text-align: left;
   letter-spacing: 2px;
   display: flex;
-  align-items: left;
+  align-items: center;
   gap: 35px;
   margin-bottom: 40px;
   justify-content: start;
@@ -146,7 +154,7 @@ body {
 
 /* Igualar altura de cajas rojas */
 .same-height {
-  height: 80px; /* altura fija en lugar de min-height */
+  height: 80px; /* altura fija para mantener consistencia entre cajas */
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -159,6 +167,19 @@ body {
 }
 
 #acerca-de-nosotros p {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+#eventos-titulo {
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+
+#eventos p {
   color: #000;
   font-weight: bold;
   font-size: 1.05rem;
@@ -193,6 +214,18 @@ body {
 
 .footer-logo img {
   max-width: 150px;
+}
+
+/* Grúas flanqueadoras en el footer */
+.footer-flanker {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.footer-flanker-right {
+  transform: scaleX(-1);
 }
 
 #contactofoot{
@@ -317,7 +350,71 @@ body {
   display: inline-block;
   border: 3px solid #d32f2f;
 }
+/* Imágenes flanqueando el logo */
+.logo-with-flankers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
 
+.flanker {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.flanker-right {
+  transform: scaleX(-1);
+}
+
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grúa móvil al lado derecho de la dirección */
+.mobile-grua {
+  display: inline-block;
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 8px;
+}
+
+/* En pantallas pequeñas: ocultar flankers, mostrar mobile-grua */
+@media (max-width: 992px) {
+  .flanker {
+    display: none !important;
+  }
+  .mobile-grua {
+    display: inline-block;
+  }
+}
+
+/* En rango 993-1154px: ocultar flankers (rango problemático) */
+@media (min-width: 993px) and (max-width: 1154px) {
+  .flanker {
+    display: none !important;
+  }
+  .mobile-grua {
+    display: none;
+  }
+}
+
+/* En pantallas muy grandes (>=1155px): mostrar flankers, ocultar mobile-grua */
+@media (min-width: 1155px) {
+  .flanker {
+    display: inline-block !important;
+  }
+  .mobile-grua {
+    display: none;
+  }
+}
 .services-list {
     list-style: none !important;
     padding-left: 18px;

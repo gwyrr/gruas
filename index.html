@@ -32,14 +32,25 @@
       </div>
     </div>
 
-    <div class="d-flex flex-column align-items-center text-center mb-3 mb-lg-0 flex-grow-1">
-      <span class="logo-circle mb-2">
-        <img src="images/logo-gruas.png" alt="Logo JR Gruas" width="90" loading="lazy">
-      </span>
-      <div class="header-location text-uppercase">
-        Cra. 16 79-38 <br> La Romelia
-      </div>
+<div class="d-flex flex-column align-items-center text-center mb-3 mb-lg-0 justify-content-center logo-block">
+  
+  <div class="logo-with-flankers d-flex align-items-center justify-content-center mb-2">
+    <img src="images/grua chiqui.png" alt="Grúa izquierda" class="flanker d-none d-lg-block" loading="lazy">
+    
+    <span class="logo-circle mx-3">
+      <img src="images/logo-gruas.png" alt="Logo JR Gruas" width="90" loading="lazy">
+    </span>
+    
+    <img src="images/grua chiqui.png" alt="Grúa derecha" class="flanker d-none d-lg-block flanker-right" loading="lazy">
+  </div>
+
+  <div class="header-location text-uppercase d-flex align-items-center justify-content-center">
+    <div class="address">
+      Cra. 16 79-38 <br> La Romelia
     </div>
+    <img src="images/grua chiqui.png" alt="Grúa móvil" class="mobile-grua d-lg-none ms-2" loading="lazy">
+  </div>
+</div>
 
     <button class="navbar-toggler d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" aria-label="Menú">
       <span class="navbar-toggler-icon"></span>
@@ -72,7 +83,7 @@
       <img src="images/logo-gruas.png" alt="Logo JR Gruas" width="50" loading="lazy">
     </span>
     <span class="text-uppercase text-white mobile-location">
-      LA ROMELIA, BRR GALAXIA
+      CRA. 16 79-38 ,LA ROMELIA
     </span>
   </div>
   <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" aria-label="Menú">
@@ -110,7 +121,7 @@
   <div id="carouselJR" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/GRUAS 1.jpg" class="d-block w-100" alt="Servicio de grúas en carretera">
+        <img src="images/CARRU12.jpeg" class="d-block w-100" alt="Servicio de grúas en carretera">
       </div>
       <div class="carousel-item">
         <img src="images/GRUAS 2.jpg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
@@ -134,28 +145,22 @@
         <img src="images/CARRU9.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
       </div>
       <div class="carousel-item">
-        <img src="images/CARRU7.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
+        <img src="images/C1.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
       </div>
       <div class="carousel-item">
-        <img src="images/CARRU10.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
+        <img src="images/C2.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
       </div>
       <div class="carousel-item">
-        <img src="images/GRUA ROJA.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
+        <img src="images/C3.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
       </div>
       <div class="carousel-item">
-        <img src="images/CARRU11.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
+        <img src="images/C4.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
       </div>
       <div class="carousel-item">
-        <img src="images/CARRU12.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
+        <img src="images/GRUAS 1.jpg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
       </div>
       <div class="carousel-item">
-        <img src="images/CARRU13.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
-      </div>
-      <div class="carousel-item">
-        <img src="images/CARRU14.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
-      </div>
-      <div class="carousel-item">
-        <img src="images/CARRU15.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
+        <img src="images/C5.jpeg" class="d-block w-100" alt="Traslado de vehículos" loading="lazy">
       </div>
     </div>
 
@@ -200,12 +205,16 @@
           <img src="images/logo nequi.png" alt="Nequi" class="icono-info" loading="lazy">
           <span>NEQUI</span>
         </div>
+        <div class="info-box same-height">
+          <img src="images/CAJASOCIAL.png" alt="Caja Social" class="icono-info" loading="lazy">
+          <span>BANCO CAJA SOCIAL</span>
+        </div>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-6">
       <div class="info-card d-flex flex-column">
-        <h2 class="h5">NUESTROS SERVICIOS</h2>
+        <h2 class="h5" id="servicios">NUESTROS SERVICIOS</h2>
         <div class="info-box same-height">
           <img src="images/FACTURA.png" alt="Factura" class="icono-info" loading="lazy">
           <span>OFRECEMOS CREDITO A 30 DIAS Y FACTURACION ELECTRONICA.</span>
@@ -216,7 +225,7 @@
         </div>
         <div class="info-box same-height">
           <img src="images/satrack-logo.png" alt="Satrack" class="icono-info" loading="lazy">
-          <span>MONITOREO GPS Y CÁMARAS CON EL RESPALDO DE SATRACK.</span>
+          <span id="respaldo">NUESTRAS GRUAS CUENTAN CON CAMARAS DE MONITOREO RESPALDADAS POR SATRACK</span>
         </div>
         <div class="info-box same-height">
           <img src="images/ESCUDO.png" alt="Seguridad" class="icono-info" loading="lazy">
@@ -249,13 +258,6 @@
       </div>
     </div>
 
-    <div class="col-lg-4 col-md-6">
-      <div class="info-card d-flex flex-column">
-        <h2 class="h5">EVENTOS Y CARNAVALES</h2>
-        <div class="info-box same-height">SERVICIO ESPECIAL DE GRÚA PLANCHÓN EQUIPADA CON PASAMANOS.</div>
-        <div class="info-box same-height">IDEAL PARA DESFILES, CARNAVALES Y EVENTOS ESPECIALES.</div>
-      </div>
-    </div>
 
   </div>
 </section>
@@ -289,6 +291,31 @@
   </div>
 </section>
 
+<!-- Eventos y Carnavales -->
+<section class="container py-5" id="eventos" aria-labelledby="eventos-titulo">
+  <h2 class="titulo-seccion text-center mb-5" id="eventos-titulo">EVENTOS Y CARNAVALES</h2>
+  
+  <div class="row align-items-center g-4">
+    <div class="col-md-6">
+      <div class="about-content">
+        <p>
+          En <strong>GRUAS JR</strong> contamos con un servicio especial diseñado para eventos de gran magnitud y celebraciones festivas.
+        </p>
+        <p>
+          ✅ Disponemos de grúa planchón equipada con pasamanos, ideal para el transporte de grupos y plataformas en desfiles, carnavales y eventos especiales.
+        </p>
+        <p>
+          ✅ Nuestro equipo garantiza seguridad, comodidad y profesionalismo en cada actividad, adaptándonos a tus necesidades particulares con puntualidad y responsabilidad.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="images/CARNAVAL.jpeg" alt="Grúa especial para eventos" class="img-fluid rounded shadow" loading="lazy">
+    </div>
+  </div>
+</section>
+
   <section class="container py-5" id="ubicacion" aria-labelledby="encuentranos">
   <h2 class="titulo-seccion text-center mb-4" id="encuentranos">ENCUENTRANOS</h2>
   
@@ -316,8 +343,10 @@
 <footer class="footer mt-5" role="contentinfo">
   <div class="footer-container container">
     
-    <div class="footer-logo mb-3 mb-md-0">
+    <div class="footer-logo mb-3 mb-md-0 d-flex align-items-center justify-content-center gap-2">
+      <img src="images/grua chiqui.png" alt="Grúa chiqui izquierda" class="footer-flanker" loading="lazy">
       <img src="images/logo-gruas.png" alt="GRUAS JR Logo" loading="lazy">
+      <img src="images/grua chiqui.png" alt="Grúa chiqui derecha" class="footer-flanker footer-flanker-right" loading="lazy">
     </div>
 
     <div class="footer-contacto mb-3 mb-md-0">
