@@ -469,6 +469,17 @@ body {
   .solo-movil {
     display: flex !important;
   }
+  
+  /* Ajustar carrusel en móvil */
+  #carouselJR {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  
+  #carouselJR .carousel-item {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
 }
 @media (min-width: 1029px) {
   .solo-escritorio {
