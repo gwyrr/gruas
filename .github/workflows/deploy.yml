@@ -19,4 +19,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           source: "."
-          target: "public_html/" # Ajusta si tu carpeta web es otra
+          target: "public_html/" 
